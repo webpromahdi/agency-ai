@@ -1,12 +1,58 @@
-# React + Vite
+# 🚀 Agency.ai - Modern Business Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌍 Live Demo
 
-Currently, two official plugins are available:
+🔗 [View Website] https://agency-ai-webpromahdi.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A fully responsive and modern business website built with **React**, **TailwindCSS**, and **Framer Motion**.  
+The site showcases services, portfolio, team members, and includes a contact form with smooth animations.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- ⚛️ **React 18** – Component-based architecture for scalability.
+- 🎨 **Tailwind CSS** – Utility-first CSS for rapid responsive styling.
+- 🎬 **Framer Motion** – Beautiful animations & transitions.
+- 📱 **Responsive Layout** – Optimized for mobile, tablet, and desktop.
+- 🌙 **Theme Toggle** – Light & Dark mode support.
+- 📧 **Contact Form** – User-friendly message form.
+- 🔗 **Footer & Navbar** – Modern navigation with social links.
+
+---
+
+## 📂 Project Structure
+
+src/
+│── assets/ # Images, icons, and static assets
+│── components/
+│ ├── layout/ # Page layout components
+│ │ ├── Footer.jsx
+│ │ └── Navbar.jsx
+│ │
+│ ├── sections/ # Main page sections
+│ │ ├── Companies.jsx
+│ │ ├── Contact.jsx
+│ │ ├── Hero.jsx
+│ │ ├── OurWork.jsx
+│ │ ├── Services.jsx
+│ │ └── Teams.jsx
+│ │
+│ ├── theme/ # Theme controls
+│ │ └── ThemeToggleBtn.jsx
+│ │
+│ └── ui/ # UI building blocks
+│ ├── ContactForm.jsx
+│ ├── ServiceCard.jsx
+│ └── Title.jsx
+│
+│── App.jsx # Main app entry
+│── index.js # React DOM render
+│── tailwind.config.js # Tailwind configuration
+│── package.json # Project metadata & dependencies
+
+👨‍💻 Author
+Built with ❤️ by Mahdi Al Hasan
+
+📜 License
+This project is MIT Licensed – feel free to use, learn, and adapt.

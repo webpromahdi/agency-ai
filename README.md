@@ -99,7 +99,7 @@ agency-ai/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/mahdi-al-hasan/agency-ai.git
+git clone https://github.com/webpromahdi/agency-ai.git
 
 # 2. Navigate into the project directory
 cd agency-ai
@@ -188,9 +188,6 @@ The app is a **single-page application** with anchor-based navigation:
 ## 👨‍💻 Author
 
 Built with ❤️ by **Mahdi Al Hasan**
-
-[![GitHub](https://img.shields.io/badge/GitHub-mahdi--al--hasan-181717?style=for-the-badge&logo=github)](https://github.com/mahdi-al-hasan)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mahdi-al-hasan)
 
 ---
 

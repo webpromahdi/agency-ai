@@ -16,15 +16,13 @@ A modern, fully responsive **digital marketing agency** landing page built with 
 
 ## 🌍 Live Demo
 
-> 🔗 **Live URL:** *(Deploy to Vercel / Netlify and add your link here)*
+🔗 **View Website** 👉 [https://agency-ai-webpromahdi.netlify.app/](https://agency-ai-webpromahdi.netlify.app/)
 
 ---
 
 ## 📸 Screenshots
 
 ![Agency.AI Website Preview](public/website.png)
-
----
 
 ## ✨ Features
 

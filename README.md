@@ -99,7 +99,7 @@ agency-ai/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/webpromahdi/agency-ai.git
+git clone https://github.com/mahdi-al-hasan/agency-ai.git
 
 # 2. Navigate into the project directory
 cd agency-ai

@@ -16,27 +16,49 @@ const Navbar = ({ theme, setTheme }) => {
         <img src={theme == 'dark' ? assets.logo_dark : assets.logo} className='w-32 sm:w-40' />
       </a>
 
-      <div
-        className={`text-gray-700 dark:text-white sm:text-sm ${
-          !sidebarOpen ? 'max-sm:w-0 overflow-hidden' : 'max-sm:w-60 max-sm:pl-10'
-        } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}
-      >
-        <img src={assets.close_icon} onClick={() => setSidebarOpen(false)} className='w-5 absolute right-4 top-4 sm:hidden' />
+      {/* Mobile Drawer Overlay */}
+      {sidebarOpen && (
+        <div
+          onClick={() => setSidebarOpen(false)}
+          className='fixed inset-0 bg-black/50 backdrop-blur-xs z-20 sm:hidden'
+        />
+      )}
 
-        <a href='#' className='sm:hover:border-b' onClick={() => setSidebarOpen(false)}>
+      <div
+        className={`text-gray-700 dark:text-white sm:text-sm z-30 ${
+          !sidebarOpen ? 'max-sm:w-0 overflow-hidden' : 'max-sm:w-64 max-sm:pl-8'
+        } max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 sm:gap-6 transition-all duration-300 shadow-2xl`}
+      >
+        <img
+          src={assets.close_icon}
+          alt='Close menu'
+          onClick={() => setSidebarOpen(false)}
+          className='w-5 absolute right-5 top-6 sm:hidden cursor-pointer'
+        />
+
+        <a href='#' className='hover:text-primary dark:hover:text-primary sm:dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
           Home
         </a>
-        <a href='#services' className='sm:hover:border-b' onClick={() => setSidebarOpen(false)}>
+        <a href='#services' className='hover:text-primary dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
           Services
         </a>
-        <a href='#our-work' className='sm:hover:border-b' onClick={() => setSidebarOpen(false)}>
+        <a href='#our-work' className='hover:text-primary dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
           Our Work
         </a>
-        <a href='#our-team' className='sm:hover:border-b' onClick={() => setSidebarOpen(false)}>
-          Our team
+        <a href='#pricing' className='hover:text-primary dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
+          Pricing
         </a>
-        <a href='#contact-us' className='sm:hover:border-b' onClick={() => setSidebarOpen(false)}>
-          Contact Us
+        <a href='#testimonials' className='hover:text-primary dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
+          Reviews
+        </a>
+        <a href='#our-team' className='hover:text-primary dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
+          Team
+        </a>
+        <a href='#faq' className='hover:text-primary dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
+          FAQ
+        </a>
+        <a href='#contact-us' className='hover:text-primary dark:hover:text-primary sm:hover:border-b transition-colors' onClick={() => setSidebarOpen(false)}>
+          Contact
         </a>
       </div>
 

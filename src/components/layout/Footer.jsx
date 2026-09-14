@@ -11,24 +11,39 @@ const Footer = ({ theme }) => {
 
           <p className='max-w-md'>From strategy to execution, we craft digital solutions that move your business forward.</p>
 
-          <ul className='flex gap-8'>
+          <ul className='flex flex-wrap gap-x-6 gap-y-2 text-xs sm:text-sm'>
             <li>
-              <a className='hover:text-primary' href='#hero'>
+              <a className='hover:text-primary transition-colors' href='#hero'>
                 Home
               </a>
             </li>
             <li>
-              <a className='hover:text-primary' href='#services'>
+              <a className='hover:text-primary transition-colors' href='#services'>
                 Services
               </a>
             </li>
             <li>
-              <a className='hover:text-primary' href='#our-work'>
+              <a className='hover:text-primary transition-colors' href='#our-work'>
                 Our Work
               </a>
             </li>
             <li>
-              <a className='hover:text-primary' href='#contact-us'>
+              <a className='hover:text-primary transition-colors' href='#pricing'>
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a className='hover:text-primary transition-colors' href='#testimonials'>
+                Reviews
+              </a>
+            </li>
+            <li>
+              <a className='hover:text-primary transition-colors' href='#faq'>
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a className='hover:text-primary transition-colors' href='#contact-us'>
                 Contact Us
               </a>
             </li>

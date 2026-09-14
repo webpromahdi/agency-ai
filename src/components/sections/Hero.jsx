@@ -3,7 +3,37 @@ import { motion } from 'motion/react';
 
 const Hero = () => {
   return (
-    <div id='hero' className='flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white'>
+    <div id='hero' className='relative flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white'>
+      {/* Dark Mode Ambient Radial Glows */}
+      <div className='pointer-events-none absolute inset-0 -z-10 overflow-hidden hidden dark:block'>
+        <motion.div
+          animate={{
+            scale: [1, 1.18, 1],
+            opacity: [0.3, 0.5, 0.3],
+            x: [0, 30, 0],
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 9,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          className='absolute top-10 left-1/2 -translate-x-1/2 w-[600px] sm:w-[800px] h-[400px] sm:h-[500px] rounded-full bg-gradient-to-tr from-[#5044E5]/40 via-indigo-500/25 to-sky-500/20 blur-[130px]'
+        />
+        <motion.div
+          animate={{
+            scale: [1.15, 1, 1.15],
+            opacity: [0.2, 0.38, 0.2],
+            x: [0, -25, 0],
+          }}
+          transition={{
+            duration: 11,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          className='absolute top-80 left-1/3 w-[450px] h-[350px] rounded-full bg-indigo-600/20 blur-[110px]'
+        />
+      </div>
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }} viewport={{ once: true }} className='inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full'>
         <img src={assets.group_profile} className='w-20' />
         <p className='text-xs font-medium'>Trusted by 10k+ people</p>

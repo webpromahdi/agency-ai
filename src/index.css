@@ -4,6 +4,12 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 * {
   font-family: "Manrope", sans-serif;
   font-weight: 500;

@@ -11,12 +11,13 @@ import Teams from './components/sections/Teams';
 import FAQ from './components/sections/FAQ';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
+import ScrollToTop from './components/ui/ScrollToTop';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
 
   return (
-    <div className='dark:bg-black relative selection:bg-primary selection:text-white'>
+    <div className='dark:bg-black relative overflow-x-hidden w-full max-w-full selection:bg-primary selection:text-white min-h-screen'>
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
       <Stats />
@@ -29,6 +30,7 @@ const App = () => {
       <FAQ />
       <Contact />
       <Footer theme={theme} />
+      <ScrollToTop />
     </div>
   );
 };

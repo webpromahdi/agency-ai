@@ -7,7 +7,7 @@ const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState('monthly'); // 'monthly' | 'yearly'
 
   return (
-    <section id='pricing' className='flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white relative'>
+    <section id='pricing' className='flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white relative overflow-hidden'>
       {/* Background ambient glow */}
       <div className='pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl -z-10' />
 
